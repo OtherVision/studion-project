@@ -6,6 +6,14 @@
   font-weight: 400;
 }
 
+.hero__copy__testimonials h2 {
+  font-size: 5.25rem;
+}
+
+.hero__copy__testimonials p {
+  width: 62ch;
+}
+
 .testimonials {
   height: auto;
   background-color: var(--color-primary);
