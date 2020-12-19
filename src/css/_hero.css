@@ -18,8 +18,12 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 50vw;
+  width: 54.5vw;
   padding: 7rem 1.875rem;
+}
+
+.hero__copy p {
+  width: 62ch;
 }
 
 .hero__copy h2 {
