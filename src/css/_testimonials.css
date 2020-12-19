@@ -2,20 +2,24 @@
   color: var(--color-primary);
   text-transform: uppercase;
   font-size: 0.9375rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   font-weight: 400;
 }
 
 .hero__copy__testimonials h2 {
   font-size: 5.25rem;
+  font-weight: bold;
+  margin-top: -2rem;
 }
 
-.hero__copy__testimonials p {
-  width: 62ch;
+.hero__copy h2 span {
+  margin: -0.9rem;
+  font-family: cursive;
+  font-size: 7rem;
 }
 
 .testimonials {
-  height: auto;
+  height: 48.125rem;
   background-color: var(--color-primary);
 }
 
@@ -25,12 +29,11 @@
   grid-template-rows: auto;
   place-items: center;
 
-  padding: 4.6875rem 0;
+  padding-top: 4.6875rem;
 }
 
 .testimonials__container h2 {
   margin: 0;
-  margin: 2.1875rem 0 3.1875rem 0;
   font-size: 3.125rem;
   color: #000;
   font-weight: 800;
@@ -39,7 +42,6 @@
 
 .testimonials__title {
   position: relative;
-  height: 4.625rem;
 }
 
 .testimonials__title p {
@@ -55,21 +57,46 @@
 
 .testimonials__title p span {
   text-transform: uppercase;
+  margin-bottom: -50rem;
 }
 
-.testimonial__paragraph {
+.testimonials__paragraph {
   width: 35.9375rem;
   height: 4.6875rem;
   font-size: 0.9375rem;
-  font-weight: bold;
+  font-weight: 600;
+
   color: #000;
   line-height: 2;
   text-align: center;
 }
 
+.testimonials__radio {
+  width: 100%;
+  text-align: center;
+  transform: scale(1.5);
+}
+
+.testimonials__radio i {
+  margin: 0.5em;
+  margin-top: 2rem;
+  color: white;
+  background-color: white;
+  border-radius: 2rem;
+  font-size: 0.6rem;
+}
+
+.testimonials__radio i:nth-last-of-type(2) {
+  background-color: black;
+  color: black;
+}
+
 .aspas {
-  font-family: "Montserrat";
-  font-size: 7.5rem;
+  font-family: "Passion One", cursive;
+  font-size: 5rem;
   font-style: italic;
-  font-weight: bold;
+  color: #000;
+  margin-top: -2.5rem;
+
+  transform: rotate(180deg);
 }
