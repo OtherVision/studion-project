@@ -1,0 +1,14 @@
+#gallery__title {
+  font-size: 7.5rem;
+  letter-spacing: -0.1rem;
+}
+
+main {
+  background: #000;
+}
+.gallery {
+  height: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
