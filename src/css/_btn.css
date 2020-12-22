@@ -38,3 +38,18 @@
   border-color: var(--color-copy);
   background: unset;
 }
+
+.events__section button {
+  width: 13.375rem;
+  height: 3.1875rem;
+  border-radius: 1.5625rem;
+  background: var(--color-primary);
+  border: none;
+
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9375rem;
+
+  margin-top: 4rem;
+}
