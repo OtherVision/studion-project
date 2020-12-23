@@ -25,6 +25,7 @@
   letter-spacing: 0.25rem;
   font-weight: 700;
   line-height: 1.125rem;
+  text-transform: uppercase;
 }
 
 .events__section div h3 i {
@@ -56,6 +57,7 @@
   font-weight: 700;
   letter-spacing: 0.1875rem;
   line-height: 1.125rem;
+  text-transform: uppercase;
 }
 
 .events__section__copy {
