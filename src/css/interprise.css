@@ -1,0 +1,57 @@
+.interprise {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+
+  position: relative;
+}
+
+.interprise img {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.interprise__copy {
+  grid-column-start: 2;
+  justify-self: right;
+
+  position: absolute;
+  left: 5rem;
+}
+
+.interprise__copy h2 {
+  width: 30ch;
+
+  font-size: 1.5625rem;
+  line-height: 1.9375rem;
+
+  margin-bottom: 3.4375rem;
+}
+
+.interprise__copy p {
+  width: 42ch;
+
+  font-size: 1.0625rem;
+  line-height: 1.6875rem;
+}
+
+.interprise__copy p:last-of-type,
+main {
+  margin-top: 2.5rem;
+}
+
+.logos {
+  background: var(--color-primary);
+  text-align: center;
+}
+
+.logos h2 {
+  margin: 0;
+  padding: 4.375rem 0 4.375rem 0;
+
+  font-size: 1.5625rem;
+}
+
+.logos img {
+  margin-bottom: 6.25rem;
+}
