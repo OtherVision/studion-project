@@ -4,6 +4,7 @@
   place-items: center;
 
   position: relative;
+  padding-top: 2.5rem;
 }
 
 .interprise img {
@@ -35,9 +36,8 @@
   line-height: 1.6875rem;
 }
 
-.interprise__copy p:last-of-type,
-main {
-  margin-top: 2.5rem;
+.interprise__copy p:last-of-type {
+  padding-top: 2.5rem;
 }
 
 .logos {
@@ -54,4 +54,16 @@ main {
 
 .logos img {
   margin-bottom: 6.25rem;
+}
+
+.frame {
+  height: 70vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.frame iframe {
+  width: 70%;
+  height: 80%;
 }
