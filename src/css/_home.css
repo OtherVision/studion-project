@@ -87,10 +87,18 @@
 
 .institutional {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
   gap: 3.125rem;
   align-items: center;
-  padding: 4.375rem;
+  padding: 4.375rem 0;
+}
+
+/*   Desktop   */
+@media screen and (min-width: 1280px) {
+  .institutional {
+    grid-template-columns: auto auto;
+    padding: 4.375rem;
+  }
 }
 
 .institutional__image {
@@ -98,7 +106,14 @@
 }
 
 .institutional__copy {
-  padding: 0 1.875rem;
+  padding: 0 0 1.875rem 0; /* mobile */
+}
+
+/*  Desktop  */
+@media screen and (min-width: 1280px) {
+  .institutional__copy {
+    padding: 0 1.875rem;
+  }
 }
 
 .institutional__copy h6 {
