@@ -30,12 +30,12 @@
 }
 
 .slick-arrow {
-  display: none !important;
+  visibility: hidden;
 }
 
 @media screen and (min-width: 1280px) {
   .slick-arrow {
-    display: block !important;
+    visibility: visible;
   }
 }
 
@@ -92,14 +92,12 @@
   line-height: 3.25rem;
 }
 
-
 @media screen and (min-width: 1280px) {
   .slide__copy h2 {
     font-size: 6.25rem;
-    
-}
   }
 }
+
 .slide__copy h2 span {
   display: block;
 }
@@ -190,7 +188,7 @@
   background-position: 40% top;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 720px) {
   .quote {
     background-attachment: fixed;
     background-size: cover;
@@ -205,10 +203,9 @@
   min-height: 80vh;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 720px) {
   .quote__container {
     align-items: center;
-
   }
 }
 
