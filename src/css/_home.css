@@ -95,6 +95,7 @@
 @media screen and (min-width: 1280px) {
   .slide__copy h2 {
     font-size: 6.25rem;
+    line-height: 6.25rem;
   }
 }
 
