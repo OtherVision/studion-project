@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: 34.625rem;
+  height: 40.625rem;
 }
 
 .hero__background {
@@ -16,23 +16,48 @@
 
 .hero__copy {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 54.5vw;
+  top: 5rem;
+  left: 0.5rem;
   padding: 7rem 1.875rem;
 }
 
+@media screen and (min-width: 1280px) {
+  .hero__copy {
+    left: unset;
+    bottom: 0;
+    right: 0;
+    width: 54.5vw;
+    padding: 7rem 1.875rem;
+  }
+}
+
 .hero__copy p {
-  width: 62ch;
+  width: 38ch;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__copy p {
+    width: 62ch;
+  }
 }
 
 .hero__copy h2 {
   margin: 0;
   margin-bottom: 3rem;
-  font-size: 7.5rem;
-  line-height: 7.5rem;
-  letter-spacing: -0.3125rem;
+
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.2rem;
+
   color: var(--color-primary);
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__copy h2 {
+    font-size: 7.5rem;
+    line-height: 7.5rem;
+    letter-spacing: -0.3125rem;
+  }
 }
 
 .hero__copy p {
