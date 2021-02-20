@@ -1,15 +1,39 @@
 .interprise {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  place-items: center;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
 
-  position: relative;
-  padding-top: 2.5rem;
+@media screen and (min-width: 1280px) {
+  .interprise {
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+
+    position: relative;
+    padding-top: 2.5rem;
+  }
 }
 
 .interprise img {
-  grid-column-start: 3;
-  grid-column-end: 4;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 1280px) {
+  .interprise img {
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    width: unset;
+    height: unset;
+
+    opacity: 1;
+  }
 }
 
 .interprise__copy {
@@ -18,26 +42,51 @@
 
   position: absolute;
   left: 5rem;
+
+  z-index: 100;
 }
 
 .interprise__copy h2 {
   width: 30ch;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
 
-  font-size: 1.5625rem;
-  line-height: 1.9375rem;
+  margin-bottom: 2rem;
+}
 
-  margin-bottom: 3.4375rem;
+@media screen and (min-width: 1280px) {
+  .interprise__copy h2 {
+    font-size: 1.5625rem;
+    line-height: 1.9375rem;
+
+    margin-bottom: 3.4375rem;
+  }
 }
 
 .interprise__copy p {
-  width: 42ch;
+  width: 60ch;
 
-  font-size: 1.0625rem;
-  line-height: 1.6875rem;
+  font-size: 0.5rem;
+  line-height: 0.8rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .interprise__copy p {
+    width: 42ch;
+
+    font-size: 1.0625rem;
+    line-height: 1.6875rem;
+  }
 }
 
 .interprise__copy p:last-of-type {
-  padding-top: 2.5rem;
+  padding-top: 0.5rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .interprise__copy p:last-of-type {
+    padding-top: 2.5rem;
+  }
 }
 
 .logos {
@@ -46,14 +95,30 @@
 }
 
 .logos h2 {
-  margin: 0;
-  padding: 4.375rem 0 4.375rem 0;
+  padding-top: 3rem;
 
-  font-size: 1.5625rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .logos h2 {
+    margin: 0;
+    padding: 4.375rem 0 4.375rem 0;
+
+    font-size: 1.5625rem;
+  }
 }
 
 .logos img {
-  margin-bottom: 6.25rem;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .logos img {
+    margin-bottom: 6.25rem;
+    width: unset;
+  }
 }
 
 .frame {
