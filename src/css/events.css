@@ -1,22 +1,50 @@
 .events__section {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
-  place-items: center;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, 1fr);
 
   margin-top: 5.9375rem;
   margin-bottom: 5.1875rem;
+
+  place-items: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .events__section {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: unset;
+
+    margin-top: 5.9375rem;
+    margin-bottom: 5.1875rem;
+  }
 }
 
 .events__section:nth-last-of-type(2) {
-  background: #f5f5f5;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1280px) {
+  .events__section:nth-last-of-type(2) {
+    display: grid;
+    background: #f5f5f5;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 .events__section img {
   width: 11.6875rem;
   height: 11.6875rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.events__section div {
+  text-align: center;
 }
 
 .events__section div h2 {
@@ -41,7 +69,13 @@
 }
 
 .events__section div p {
-  width: 53ch;
+  width: 40ch;
+}
+
+@media screen and (min-width: 1280px) {
+  .events__section div p {
+    width: 53ch;
+  }
 }
 
 .events__section p {
@@ -65,10 +99,36 @@
   grid-column-start: 2;
   grid-column-end: 4;
 
-  margin-right: 3rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  width: 85ch;
+  width: 35ch;
+}
+
+@media screen and (min-width: 1280px) {
+  .events__section__copy {
+    width: 85ch;
+    margin-right: 3rem;
+  }
+}
+
+.events__section__adress {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 3;
+  grid-column: 2;
+
+  place-items: center;
+}
+
+@media screen and(min-width: 1280px) {
+  .events__section__adress {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 3;
+    grid-column: 2;
+
+    place-items: center;
+  }
 }
 
 .events__section__adress h4,
@@ -92,16 +152,6 @@
   color: var(--color-copy);
   font-weight: 400;
   font-family: "Roboto", sans-serif;
-}
-
-.events__section__adress {
-  grid-row: 3;
-  grid-column: 2;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  place-items: center;
 }
 
 .events__section__adress i {
