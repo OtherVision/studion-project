@@ -1,6 +1,11 @@
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (min-width: 1280px) {
+  .contact {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .contact h3 {
@@ -31,6 +36,14 @@
   font-family: "Roboto";
   font-weight: 700;
   line-height: 1.6875rem;
+  width: 30ch;
+}
+
+@media screen and (min-width: 1280px) {
+  .contact__info span {
+    grid-template-columns: 1.5rem auto;
+    width: unset;
+  }
 }
 
 .contact__info__container,
@@ -39,12 +52,31 @@
 }
 
 .contact__info__container {
-  float: right;
-  padding-right: 7.125rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .contact__info__container {
+    width: unset;
+    display: unset;
+    float: right;
+    padding-right: 7.125rem;
+  }
 }
 
 .contact__form__container {
-  padding-left: 7.125rem;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .contact__form__container {
+    padding-left: 7.125rem;
+  }
 }
 
 .contact__form {
