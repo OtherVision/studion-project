@@ -21,6 +21,11 @@
   padding: 7rem 1.875rem;
 }
 
+@media screen and (min-width: 720px) {
+  .hero__copy {
+    right: 50;
+  }
+}
 @media screen and (min-width: 1280px) {
   .hero__copy {
     left: unset;
@@ -45,14 +50,14 @@
   margin: 0;
   margin-bottom: 3rem;
 
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   line-height: 3.5rem;
   letter-spacing: -0.2rem;
 
   color: var(--color-primary);
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 720px) {
   .hero__copy h2 {
     font-size: 7.5rem;
     line-height: 7.5rem;
@@ -65,4 +70,10 @@
   font-size: 0.9375rem;
   line-height: 1.875rem;
   color: var(--color-copy--alt);
+}
+
+@media screen and (min-width: 720px) {
+  .hero__copy p {
+    width: 50ch;
+  }
 }
